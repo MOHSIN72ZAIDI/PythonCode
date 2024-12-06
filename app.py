@@ -6,7 +6,9 @@
 # price=10
 # price=20
 # print(price)
-#
+# from idlelib.macosx import addOpenEventSupport
+# from os import remove
+# from typing import List
 
 # rating = 4.9
 # is_published = True
@@ -199,27 +201,141 @@
 # h=input("Enter 'H'/'h' for help")
 # q=input("Enter ' Q '/'q' for Quite"
 
-print("This is car game ")
-comand = ""
-while comand !="q"or comand != "Q":
-    comand=input ( "\nPress  any key to change function if you need help then press 'H'/'h': " ).lower()
-    if comand == "H" or comand == "h":
-        print("'ST'/'st'-- to start the car \n'SP'/'sp'-- to stop the car \n 'Q'/'q'-- to quit or exit")
-        print("\nNote: If You Press any other  Key this Program not work  ")
-    if comand == "ST" or comand == "st":
-        print("This Car is Start")
-        while comand == "ST" or comand == "st":
-            print("This Car is already started")
-    if comand == "SP" or comand == "sp":
-        print("This Car is Stopped")
-    if comand == "Q" or comand == "q":
-            print("Game Over")
-            break
-    else:
-        print("\nSorry we don't have this type of command ")
+# print("This is car game ")
+# car_started = False  # Tracks whether the car is started
+# comand = ""
+# while comand !="q"or comand != "Q":
+#     comand=input ( "\nPress  any key to change function if you need help then press 'H'/'h'")
+#     if comand == "H" or comand == "h":
+#         print("'ST'/'st'-- to start the car \n'SP'/'sp'-- to stop the car \n 'Q'/'q'-- to quite")
+#         print("\nNote: If You Press any other Key this Program not work  ")
+#     elif comand == "ST" or comand == "st":
+#         if car_started:
+#                 print("The car is already started!")
+#         else:
+#                 car_started = True
+#                 print("The car is now started.")
+#     elif comand == "SP" or comand == "sp":
+#          if not car_started:
+#             print("The car is already stopped!")
+#          else:
+#             car_started = False
+#             print("The car is now stopped.")
+#     elif comand == "Q" or comand == "q":
+#             print("Game Over")
+#             break
+#     else:
+#         print ( "\nSorry we don't have this type of command " )
+#
+#
+#
+# print("This game is exit so if you run this command again then run the program again ")
+
+# i=0
+# for item in range(10,50,10):
+#     print ( item )
+#     i=i+item
+#
+# print (i)
+
+# this task print "L" shape
+
+# numbers =[1,1,1,1,7]
+# for x_count in numbers:
+#     output =" "
+#     for count in range(x_count):
+#         output += "x"
+#     print(output)
+
+    # this task print "f" shape
+#
+# numbers = [8,2,6,2,2]
+# for x_counter in numbers:
+#     output=' '
+#     for count in range(x_counter):
+#         output+='x'
+#     print(output)
 
 
-print("This game is exit so if you run this command again then run the program again ")
+
+
+
+# index=[1,2,3,4,6,7,8,9,]
+# i=0
+# for largest_index in index:
+#     if largest_index < index[i]:
+#         largest_index = index[i]
+#     else:
+#         index[i] = largest_index
+# i= i + 1
+# print(largest_index)
+
+
+# matrix=[
+#     [1,2,3],
+#     [4,5,6],
+#     [7,8,9]
+# ]
+
+# for row in matrix:
+#     print(row)
+#     for col in matrix:
+#         print ( col )
+# matrix[0][1]=20
+# print(matrix[:])
+
+
+
+
+# this program remove the repeat value
+
+# numbers=[2,1,3,0,4,5,1,0,4,6,7]
+# unique=[]
+# for num in numbers:
+#     if num not in unique:
+#         unique.append(num)
+# unique.sort()
+# print(unique)
+
+
+
+# this program remove the 2 value in the list
+# # numbers.remove(2)
+# print(numbers)
+
+
+
+# # tripple list
+# numbers=[1,2,3]
+# numbers[{0}:]=10
+# print(numbers)
+# # print(numbers[0])
+
+
+# math number into english word
+# numbers=input("Please Enter you'r phone number: ")
+# numbers_digit={
+#     '0':'zero',
+#     '1':'one',
+#     '2':'two',
+#     '3':'three',
+#     '4':'four',
+#     '5':'five',
+#     '6':'six',
+#     '7':'seven',
+#     '8':'eight',
+#     '9':'nine'
+# }
+# output=" "
+# for char in numbers:
+#     output += numbers_digit[char] + " "
+#
+# print(output)
+
+
+
+
+
 
 
 
