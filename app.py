@@ -333,6 +333,65 @@
 # print(output)
 
 
+# This is the function for greeting without parameter
+# def greet_user():
+#     print("Hi Sir/Mam" )
+#     print ("Im calling you from The company  ")
+#     print("How R U Today ")
+#
+#
+# print("Start")
+# greet_user()
+# print("Finish")
+
+
+# This is the function for greeting with parameter
+# it gave you error when you don't use parameter when calling
+
+# def greet_user(name):
+#
+#     print(f"Hi {name}")
+#     print ("Im calling you from The company  ")
+#     print("How R U Today ")
+#
+#
+#
+# greet_user("Jhon")
+# greet_user("Alexa")
+# print("Finish")
+
+
+
+# This is the function for greeting with 2 parameter
+# it gave you error when you don't use parameter when calling or using one argument
+
+# def greet_user(First_name,last_name):
+#
+#     print(f"Hi {First_name} {last_name}" )
+#     print ("Im calling you from The company  ")
+#     print("How R U Today ")
+#
+#
+#
+# greet_user("Jhon","smith")
+# greet_user("Alexa","Brian")
+# print("Finish")
+#
+#
+
+# This is the function in which we gave parameter mathematical
+# def square(number):
+#     return number * number
+#
+#
+# print(square(5))
+
+# In this function we not use return statement in function
+# def square(number):
+#     print( number * number)
+#
+# print(square(2))
+
 
 
 
