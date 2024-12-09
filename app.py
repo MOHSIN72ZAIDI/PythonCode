@@ -470,4 +470,53 @@
 
 
 
-# Now we are using inheritance
+# # Now we are using inheritance
+# # In this class I want to show dog is bark and cat is doing meaow
+# # and memal is use for walk for both classes
+#
+#
+# class Memal:
+#     def walk(self):
+#         print("walk")
+#
+#
+# class Dog(Memal):
+#     def dog(self):
+#         print("bark :'bao bao '")
+#
+#
+# class Cat(Memal):
+#     def cat(self):
+#         print("CAT_TALK:'meaow meaow'")
+#
+#
+# d1=Dog()
+# d1.dog()
+# d1.walk()
+# c1=Cat()
+# c1.cat()
+# c1.walk()
+
+
+
+
+
+ # MODULE
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
