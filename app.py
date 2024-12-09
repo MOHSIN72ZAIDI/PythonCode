@@ -396,5 +396,78 @@
 
 
 
+# Creating a Reusable Function
+# def emoji_converter():
+#     message = input("Enter your Mood: ")
+#     words = message.split(" ")
+#     emojis ={
+#
+#    }
 
 
+
+
+# Exceptions
+
+# try:
+#     age = int(input("Enter your age: "))
+#     # print("Your age is", age)
+#     income=2000
+#     risk = income/age
+#     print(age)
+#     print(risk)
+# except ZeroDivisionError:
+#     print("Age must be greater than zero")
+# except ValueError:
+#     print("Invalid Error ")
+#
+#
+#
+
+
+# In this code we are using classes
+# class Point:
+#     def move(self):
+#         print("The move funtion is start")
+#
+#     def draw(self):
+#         print("The draw funtion is start")
+#
+# point1 = Point()
+# point1.move()
+# point1.x=10
+# point1.y=20
+# print(point1.x, point1.y)
+# point1.draw()
+#
+#
+# point2 = Point()
+# point2.x=30
+# point2.y=40
+# print(point2.x, point2.y)
+
+
+
+# in this class we are using constructor
+# class Box:
+#     def __init__(self, width, height):
+#         self.width = width
+#         self.height = height
+#     def area(self):
+#         return self.width * self.height
+#     def perimeter(self):
+#         return 2 * self.width + self.height
+#
+#
+# b=Box(100,100)
+#
+# b.width=200
+# b.height=1000
+# print(b.area())
+# print(b.perimeter())
+
+
+
+
+
+# Now we are using inheritance
