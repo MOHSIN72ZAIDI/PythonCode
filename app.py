@@ -10,8 +10,9 @@
 # from os import remove
 # from typing import List
 # import numbers
-import numbers
-
+# import numbers
+# from itertools import count
+from operator import truediv
 
 # rating = 4.9
 # is_published = True
@@ -669,7 +670,7 @@ import numbers
 #         null.append(i)
 #     print(i)
 #     print(type(i))
-#
+
 
 
 # Write a Python program that prints all the numbers from 0 to 6 except 3 and 6.
@@ -709,7 +710,35 @@ import numbers
 # 4
 # buzz
 
+
+
+
+
+
+
+
+
+#  print Fibonacci number in which 0,1,1,2,3,5,8,13.......
+# total_previous=0
+# total_next=1  # Initialized to 1 for clarity in calculations
+# total=0
 #
+# # Loop to generate and display a sequence
+# for i in range ( 50 ):  # Loop up to 50 iterations
+#     total=total_previous + total_next
+#     print ( total, end=" " )
+#
+#     # Update values for the next iteration
+#     total_previous=total_next
+#     total_next=total
+
+
+
+
+
+
+
+
 # for fizz in range(51):
 #     if fizz % 3 == 0 and fizz % 5 == 0 :
 #         print("fizzbuzz")
@@ -734,8 +763,98 @@ import numbers
 # Test Data : Rows = 3, Columns = 4
 # Expected Result : [[0, 0, 0, 0], [0, 1, 2, 3], [0, 2, 4, 6]]
 
+# # Prompt the user to input the number of rows
+# row_num = int(input("Input number of rows: "))
+#
+# # Prompt the user to input the number of columns
+# col_num = int(input("Input number of columns: "))
+#
+# # Create a 2D list (a list of lists) filled with zeros using list comprehension
+# # The outer list will have 'row_num' elements and the inner lists will have 'col_num' elements
+# # multi_list = [[0 for col in range(col_num)] for row in range(row_num)]
+# #
+# # # Nested loop to populate the 2D list with multiplication results
+# # for row in range(row_num):
+# #     for col in range(col_num):
+# #         # Set the value at position [row][col] in the 2D list to the product of 'row' and 'col'
+# #         multi_list[row][col] = row * col
+# #
+# # # Print the resulting 2D list containing the multiplication table
+# # for row in multi_list:
+# #     print(row)
+
+
+# Write a Python program that accepts a string and calculates the number of digits and letters.
+# Sample Data : Python 3.2
+# Expected Output :
+# Letters 6
+# Digits 2
+
+sample_data = input("Enter a string with numbers: ")
+letters_count = 0
+digits_count = 0
+
+for char in sample_data:
+    if char.isalpha():  # Check if the character is a letter
+        letters_count += 1
+    elif char.isdigit():  # Check if the character is a digit
+        digits_count += 1
+
+print("Letters:", letters_count)
+print("Digits:", digits_count)
 
 
 
 
 
+# 13. Write a Python program that accepts a sequence of comma separated 4 digit binary numbers as its input. The program will print the numbers that are divisible by 5 in a comma separated sequence.
+# Sample Data : 0100,0011,1010,1001,1100,1001
+# Expected Output : 1010
+
+#
+# items = []
+# num = [x for x in input().split(",")]
+# for p in num:
+#     x = int (p,2)
+#     if not x % 5:
+#         items.append(p)
+# print(','.join(items))
+
+
+
+
+#  Write a Python program to check the validity of passwords input by users.
+# Validation :
+#
+# At least 1 letter between [a-z] and 1 letter between [A-Z].
+# At least 1 number between [0-9].
+# At least 1 character from [$#@].
+# Minimum length 6 characters.
+# Maximum length 16 characters.
+
+import re
+print("At least 1 letter between [a-z] and 1 letter between [A-Z]")
+print("At least 1 number between [0-9]")
+print("At least 1 character from [$#@]")
+print("Minimum length 6 characters")
+print("# Maximum length 16 characters")
+
+p= str(input("Make a strong password: "))
+x = True
+while x:
+    if (len(p) < 6 or len(p) > 12):
+        break
+    elif not re.search("[a-z]",p):
+        break
+    elif not re.search("[0-9]",p):
+        break
+    elif not re.search("[A-Z]",p):
+        break
+    elif re.search("\s",p):
+        break
+    else:
+        print("Valid password ")
+        x = False
+        break
+if x:
+    print("Invalid password ")
